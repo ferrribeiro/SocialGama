@@ -1,0 +1,19 @@
+li{
+    list-style-type: none;
+}
+
+.nav-estilo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.nav-bar-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar-list li {
+    margin-left: 10px;
+}

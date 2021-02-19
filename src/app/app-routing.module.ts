@@ -6,7 +6,9 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { ConvitesComponent } from './convites/convites.component';
 import { HomeComponent } from './home/home.component';
 import { InicialComponent } from './inicial/inicial.component';
+import { LoginComponent } from './login/login.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { SairComponent } from './sair/sair.component';
 
 const routes: Routes = [{
   path: '',
@@ -26,7 +28,15 @@ const routes: Routes = [{
 } , {
   path: 'convites',
   component: ConvitesComponent,
-}];
+}, {
+  path: 'login',
+  component: LoginComponent,
+}, {
+  path: 'sair',
+  component: SairComponent,
+}
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

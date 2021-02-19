@@ -1,3 +1,33 @@
 <header class="header">
-    <h1 class="header__title"> {{title}} </h1>
+    <div class="nav-estilo col-12">
+        <div class="logoNav">
+            <img src="socialgama.logo.jpg">
+        </div>
+        <div class="pesquisa">            
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar amigo" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar amigo</button>
+          </form>
+        </div>
+
+        <div class="linksNav">
+            <ul class="nav-bar-list">
+                <li>
+                    <a routerLink="inicial" routerLinkActive="ativado" [routerLinkActiveOptions] = "{exact: true}"> Inicial </a> 
+                 </li>
+                 <li>
+                    <a routerLink="perfil" routerLinkActive="ativado" [routerLinkActiveOptions] = "{exact: true}"> Perfil </a> 
+                 </li>
+                 <li>
+                    <a routerLink="amigos" routerLinkActive="ativado" [routerLinkActiveOptions] = "{exact: true}"> Amigos </a> 
+                 </li>
+                 <li>
+                    <a routerLink="convites" routerLinkActive="ativado" [routerLinkActiveOptions] = "{exact: true}"> Convites </a> 
+                 </li>
+                 <li>
+                    <a routerLink="sair" routerLinkActive="ativado" [routerLinkActiveOptions] = "{exact: true}"> Sair </a> 
+                 </li>
+            </ul>
+        </div>
+    </div>
 </header>
